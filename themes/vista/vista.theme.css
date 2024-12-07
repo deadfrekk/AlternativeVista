@@ -1,11 +1,48 @@
 /**
- * @name Alternative Vista 4
+ * @name Alternative Vista 3
  * @author Frekk
- * @version 1.4
+ * @version 1.5
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
 */
+
+/*debug, i though the scheme was a little too dark*/
+.appMount_ea7e65{
+  filter: brightness(1.3); /**hue-rotate(50deg); blur(0.5px); aesthetic*/
+  
+}
+/*this clamp will affect ALL IMAGES no dupes and emojis?*/
+.imageWrapper_d4597d, 
+.clickableSticker_a1debe, 
+.videoWrapper_ba4b17,
+.avatar_ec8679,
+.userAvatar_ac3629,
+.avatar_d80634,
+.avatarSmall_d80634,
+.replyAvatar_f9f2ca,
+.avatar_f9f2ca,
+.contentImage_dc67b6,
+.thumbnail_c64476,
+.icon_f90abb,
+.avatarStack_c51b4e .avatar_c51b4e,
+.displayAvatar_b0286e,
+.emoji,
+.primaryEmoji_e58351,
+.jumboable,
+.emojiItem_fbfedd,
+.emojiItemMedium_fbfedd,
+.guildIcon_bfabc4,
+.emoji_f48b14
+{
+  filter: brightness(0.80) contrast(0.9);
+}
+/*.visualMediaItemContainer_cda674, .oneByOneGridSingle_cda674, .mosaicItemMediaMosaic_e5c1dc{
+  filter: brightness(0.92);
+}*/
+
+/** debug end**/
+
 
 /*delete all discord mask for svgs and such*/
 /*modified from this guy https://github.com/NuffleFluffle/SquareAvatars/blob/main/themes/square-borders.theme.css */
@@ -23,7 +60,7 @@ mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+Zp
 mask-size: contain !important;
 }
 .wrapper_c5f96a .svg_c5f96a foreignObject .wrapper_f90abb{
-  filter: opacity(70%) ;
+  filter: opacity(70%) saturate(0.8);
   transition: 0.2s;
 }
 .wrapper_c5f96a .svg_c5f96a foreignObject .wrapper_f90abb.selected_f90abb{
@@ -31,6 +68,12 @@ mask-size: contain !important;
   transition: 0.2s;
 }
 /*server icons END*/
+
+/*
+.popoutContainer_cf58b5{
+  background-color: transparent !important;
+  color: green;
+}*/
 
 /*white notif pill*/
 .pill_a5ad63.wrapper_c4cd66 .item_c4cd66{
@@ -65,8 +108,18 @@ mask-size: contain !important;
   width: 100% !important;
   border-radius: 0px;
 }
+/*emoji picker popup*/
 .contentWrapper_af5dbb{
 background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+border-radius: 0;
+}
+.container_bdea70{
+  background: transparent;
+  border-radius: 0;
+}
+.emojiPickerHeader_bdea70 {
+  background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+
 }
 .wrapper_e06857.header_a3bc57, .wrapper_e06857.packHeader_de4721{
   background: linear-gradient(rgb(43,43,43), rgb(47,47,47), transparent);
@@ -273,7 +326,7 @@ background: rgb(30, 30, 30);
 box-shadow: 
 inset 2px 130px 100px -55px rgb(23, 23, 23)/*inset 0 10px 20px -17px black,*/,
 inset 2px -150px 150px -55px rgb(23, 23, 23),
-inset -10px 0 5px -10px white,
+inset -10px 0 5px -10px rgba(255, 255, 255, 0.51),
 /*inset 0px -250px 100px -15px rgb(43,43,43)*/
 inset 0 -15px 10px -15px black;
 }
@@ -914,9 +967,25 @@ background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.073)
 .member_cbd271{
 background-color: rgb(47,47,47);
 }
+/*interactive titlebar*/
 .themed_fc4f04{
 background: rgb(47,47,47) !important;
-box-shadow: inset 0 20px 20px -17px black;
+box-shadow: inset 0 20px 20px -17px black,
+inset 0 -10px 10px -17px rgb(101, 101, 101),
+0 10px 10px -17px black;
+}
+/*filter search*/
+.libraryFilter_e0264e .searchBar_e0264e.container_c18ec9.small_c18ec9{
+    background: rgb(43,43,43);
+border-radius: 0px;
+box-shadow: inset 0 0 5px rgb(47,47,47);
+border: 1px solid black;
+}
+/*library settings page*/
+.scroller_c100ff.auto_c49869.scrollerBase_c49869{
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+box-shadow: inset 0 0 10px black;
+/*filter:sepia(0.1);*/
 }
 /*chat buttons*/
 .themedBackground_bdf0de, .button_df39bd{
@@ -1189,6 +1258,20 @@ background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(
 }
 wrapper_e06857 categoryHeader_fe2299{
   background: transparent;
+}
+/*reply banner*/
+.replyBar_b11c5e, .threadSuggestionBar_b11c5e{
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+}
+.quickswitcher_f4e139{
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+}
+.quickswitcher_f4e139 .input_f4e139{
+  background-color: transparent;
+}
+/*next to interaction banner bar*/
+.theme-dark .children_fc4f04:after{
+  background: none;
 }
 
 /*betterdiscordcsswindow*/
