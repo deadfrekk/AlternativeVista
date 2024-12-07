@@ -1,7 +1,7 @@
 /**
  * @name Alternative Vista 3
  * @author Frekk
- * @version 1.5
+ * @version 1.5.1
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
@@ -356,7 +356,7 @@ border-radius:2px;
 transition: 0.2s ease;
 }
 .wrapper_c5f96a:hover{
-transform: scale(1.1);
+/*transform: scale(1.1);*//*maybe this is too modern?*/
 transition: 0.1s ease;
 }
 /*expanded folder shape*/
@@ -523,7 +523,7 @@ z-index: 999;
 }
 .button_adcaac:hover.buttonColor_adcaac:hover, .button_adcaac.buttonColor_adcaac:hover{
   background-color: rgb(37, 50, 233);
-  transform: scale(1.05);
+  /*transform: scale(1.05);*//*maybe this is too modern?*/
   transition: 0.2s;
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.5),
   inset 0 -10px 5px -8px rgba(255, 255, 255, 0.5),
@@ -667,8 +667,7 @@ background-color: transparent !important;
 }
 .button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeSmall_dd4f85.grow_dd4f85:hover{
   background-color: rgb(37, 50, 233); 
-  
-  transform: scale(1.05);
+  /*transform: scale(1.05);*//*maybe this is too modern?*/
   transition: 0.2s;
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.5),
   inset 0 -10px 5px -8px rgba(255, 255, 255, 0.5),
@@ -679,7 +678,7 @@ background-color: transparent !important;
 }
 .button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeSmall_dd4f85.grow_dd4f85:active{
   background-color: rgb(8, 139, 58);
-  transform: scale(1.05);
+  /*transform: scale(1.05);*//*maybe this is too modern?*/
   transition: 0.2s;
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.5),
   inset 0 -10px 5px -8px rgba(255, 255, 255, 0.5),
@@ -714,7 +713,7 @@ background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(
 .root_a5ea57.tile_dc5fc4 .buttonContainer_a5ea57 .button_dd4f85:hover,
 .footerSeparator_f9a4c9 .button_dd4f85:hover{
   background-color: rgb(37, 50, 233); 
-  transform: scale(1.05);
+  /*transform: scale(1.05);*//*maybe this is too modern?*/
   transition: 0.2s;
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.5),
   inset 0 -10px 5px -8px rgba(255, 255, 255, 0.5),
@@ -727,7 +726,7 @@ background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(
 .root_a5ea57.tile_dc5fc4 .buttonContainer_a5ea57 .button_dd4f85:active,
 .footerSeparator_f9a4c9 .button_dd4f85:active{
 background-color: rgb(8, 139, 58);
-  transform: scale(1.05);
+  /*transform: scale(1.05);*//*maybe this is too modern?*/
   transition: 0.2s;
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.5),
   inset 0 -10px 5px -8px rgba(255, 255, 255, 0.5),
@@ -782,7 +781,8 @@ inset 0 1px 20px -10px rgb(255, 255, 255),
 inset 0 -15px 15px -15px rgb(255, 255, 255),
 0px 0px 10px black !important;
 background: rgb(37, 50, 233) !important;
-transform: scale(1.01);
+/*transform: scale(1.01);*//*maybe this is too modern?*/
+  
 transition: 0.2s;
 }
 .searchBarComponent_f0963d:active{
@@ -792,7 +792,7 @@ inset 0 1px 20px -10px rgba(255, 255, 255, 0.459),
 inset 0 -15px 15px -15px rgba(255, 255, 255, 0.553),
 0px 0px 10px black  !important;
 background: rgb(91, 5, 230) !important;
-transform: scale(1.01);
+/*transform: scale(1.01);*//*maybe this is too modern?*/
 transition: 0;
 }
 
@@ -886,12 +886,13 @@ box-shadow: 0 0 2px 0px rgb(134, 134, 134);
   transition: 0s;
 }
 .avatar_f9f2ca.clickable_f9f2ca:hover{
-  transform: scale(1.01);
+  /*transform: scale(1.01);*//*maybe this is too modern?*/
+ 
   box-shadow: 0 0 5px rgb(0, 255, 0) !important;
   transition: 0.1s;
 }
 .avatar_f9f2ca.clickable_f9f2ca:active{
-  transform: scale(1.01);
+  /*transform: scale(1.01);*//*maybe this is too modern?*/
   box-shadow: 0 0 10px rgba(212, 0, 255, 0.788) !important;
   transition: 0.1s;
 }
