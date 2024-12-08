@@ -1,22 +1,25 @@
 /**
  * @name Alternative Vista 3
  * @author Frekk
- * @version 1.6.1
+ * @version 1.6.2
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
 */
 
+:root{
+  --hueshift: 0deg;
+}
+
 /*i though the scheme was a little too dark*/
 .appMount_ea7e65{
-  filter: brightness(1.3); /**hue-rotate(50deg); blur(0.5px); aesthetic*/
+  filter: brightness(1.3) hue-rotate(var(--hueshift)); /**hue-rotate(50deg); blur(0.5px); aesthetic*/
   
 }
 /*this clamp will affect ALL IMAGES no dupes and emojis?*/
 .imageWrapper_d4597d, 
 .clickableSticker_a1debe, 
 .videoWrapper_ba4b17,
-.avatar_ec8679,
 .userAvatar_ac3629,
 .avatar_d80634,
 .avatarSmall_d80634,
@@ -25,7 +28,6 @@
 .contentImage_dc67b6,
 .thumbnail_c64476,
 .icon_f90abb,
-.avatarStack_c51b4e .avatar_c51b4e,
 .displayAvatar_b0286e,
 .emoji,
 .primaryEmoji_e58351,
@@ -36,9 +38,11 @@
 .emoji_f48b14,
 .media_f847a3,
 .gif_bad108,
-.sticker_de4721
+.sticker_de4721,
+.avatarDecoration_f9f2ca,
+.avatar_c51b4e
 {
-  filter: brightness(0.80) contrast(0.9);
+  filter: brightness(0.80) contrast(0.9) hue-rotate(calc(-1*var(--hueshift)));
 }
 /*.visualMediaItemContainer_cda674, .oneByOneGridSingle_cda674, .mosaicItemMediaMosaic_e5c1dc{
   filter: brightness(0.92);
@@ -380,7 +384,8 @@ border-radius: 5px solid black !important;
 /*https://www.gradientmagic.com/collection/darkbg/gradient/1602197911880*/
 background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 
-box-shadow: inset 0 20px 20px -17px black;
+box-shadow: inset 0 20px 20px -17px black,
+inset -7px 0 10px -10px black;
 }
 .privateChannels_f0963d{
 /*background-Image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6081414.jpg&f=1&nofb=1&ipt=4ab42d88d55b20f4789501794fa7751de596e5730b037ace047337876758805e&ipo=images);*/
@@ -448,6 +453,7 @@ box-shadow: inset 2px 90px 100px -55px rgb(23, 23, 23)/*inset 0 10px 20px -17px 
 /*inset 0px -250px 100px -15px rgb(43,43,43)*/
 inset 0 -15px 10px -15px black;
 }
+
 /*user action panel*/
 .panels_a4d4d9{
 background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
@@ -611,11 +617,21 @@ font-size: 0.9rem !important;
 /*font-variant-caps: all-small-caps;*/
 }
 
+/* chat fade low taper*/
+.form_a7d72e.formWithLoadedChatInput_a7d72e{
+  box-shadow: 
+  0 -10px 10px rgb(47,47,47),
+  inset 5px 0 15px -18px white,
+  inset 0 100px 30px -50px rgb(47,47,47);
+  /*get back here*/
+}
+/*nav shadow. SHADOW GOVERNMENT ALSO NEED THEY NEED MONEY*/
 /*chat background & search chat background*/
 .chatContent_a7d72e, .searchResult_ddc613{
-background: rgb(47,47,47);
+background-image: linear-gradient(to bottom left, rgb(61, 61, 61), rgb(43,43,43) 50%, rgb(47,47,47)95%) !important;
 border: 1px;
-box-shadow: inset 0 0 5px rgb(47,47,47);
+box-shadow: 
+inset 5px 0 15px -15px white;
 }
 /*seperator bg*/
 .content_c2654d{
@@ -937,12 +953,12 @@ body::after{
  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
  content:url(https://github.com/deadfrekk/discord-projects/blob/main/themes/vista/img/particlegiftransparent.gif?raw=true); /*url(img2.png) url(img3.gif) url(img4.jpg); */
 }
-/*app detected window activity*/
+/*app detected window activity stream game*/
 .theme-dark .panel_bf1a22{
 background: url(https://github.com/deadfrekk/discord-projects/blob/main/themes/vista/img/particlegiftransparent.gif?raw=true) no-repeat 10%;
 background-size: contain;
 background-position: 0px 25px;
-background-color: var(--bg-overlay-1, var(--background-secondary-alt));
+background-color: rgb(33, 34, 33);/*var(--bg-overlay-1, var(--background-secondary-alt));*/
 animation: 4s appParticleGlow ease-in-out infinite alternate;
 border-bottom: 0px white;
 }
@@ -975,6 +991,7 @@ background-color: rgb(47,47,47);
 background: rgb(47,47,47) !important;
 box-shadow: inset 0 20px 20px -17px black,
 inset 0 -10px 10px -17px rgb(101, 101, 101),
+inset 5px 0 5px -5px rgb(80, 80, 80),
 0 10px 10px -17px black;
 }
 /*filter search*/
