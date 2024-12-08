@@ -1,13 +1,13 @@
 /**
  * @name Alternative Vista 3
  * @author Frekk
- * @version 1.5.1
+ * @version 1.6
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
 */
 
-/*debug, i though the scheme was a little too dark*/
+/*i though the scheme was a little too dark*/
 .appMount_ea7e65{
   filter: brightness(1.3); /**hue-rotate(50deg); blur(0.5px); aesthetic*/
   
@@ -33,7 +33,10 @@
 .emojiItem_fbfedd,
 .emojiItemMedium_fbfedd,
 .guildIcon_bfabc4,
-.emoji_f48b14
+.emoji_f48b14,
+.media_f847a3,
+.gif_bad108,
+.sticker_de4721
 {
   filter: brightness(0.80) contrast(0.9);
 }
@@ -655,8 +658,8 @@ background-color: transparent !important;
 }
 /** end **/
 
-/* buttons? live */
-.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeSmall_dd4f85.grow_dd4f85{
+/* buttons? live buttons in general application?*/
+.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeSmall_dd4f85.grow_dd4f85, .lookFilled_dd4f85.colorPrimary_dd4f85{
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.5),
   inset 0 -10px 5px -8px rgba(255, 255, 255, 0.5),
   inset 5px 0 10px -8px rgba(255, 255, 255, 0.5),
@@ -676,7 +679,7 @@ background-color: transparent !important;
   inset 0px 15px 10px -8px rgba(173, 138, 138, 0.5),
   0px 0px 10px black;
 }
-.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeSmall_dd4f85.grow_dd4f85:active{
+.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeSmall_dd4f85.grow_dd4f85:active, .lookFilled_dd4f85.colorPrimary_dd4f85:active{
   background-color: rgb(8, 139, 58);
   /*transform: scale(1.05);*//*maybe this is too modern?*/
   transition: 0.2s;
@@ -863,7 +866,6 @@ border: 2px solid transparent !important;
 .avatarDecoration_f9f2ca{
 position: absolute;
 left: 8px;
-top: 2px;
 }
 /*unround image messages*/
 .visualMediaItemContainer_cda674, .oneByOneGridSingle_cda674, .mosaicItemMediaMosaic_e5c1dc{
@@ -1283,6 +1285,51 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
 background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
 }
 
+/* Screenshare popup */
+
+/*art*/
+.modalSize_e1cc86.root_f9a4c9.fullscreenOnMobile_f9a4c9.rootWithShadow_f9a4c9 .art_e1cc86{
+  display: none !important;
+  background-image: none;
+}
+/*close button. fsomereason inoperable in right corner. already 2 other means of exiting so removing*/
+.modalSize_e1cc86.root_f9a4c9.fullscreenOnMobile_f9a4c9.rootWithShadow_f9a4c9 .close_f9a4c9{
+  display: none;
+}
+/*bg*/
+.root_f9a4c9{
+  background-color: rgb(47,47,47);
+  border-radius: 0px;
+}
+/*option background*/
+.modalContent_e1cc86 .card_f30ffe{
+  border-radius: 0;
+  background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+}
+/*footer*/
+.footerSeparator_f9a4c{
+  border-radius: 0px;
+}
+/*tab*/
+.tabItemSelected_a18ec1{
+  border-bottom: 0 !important;
+  animation: 0.5s tabGlow linear infinite alternate;
+}
+@keyframes tabGlow{
+  0%{
+      box-shadow: inset 0px -1px 2px 1px rgb(47, 47, 47),
+inset 4.5px 2px 5px rgb(47, 47, 47),
+inset -5px 2px 5px rgb(47, 47, 47),
+inset 0 -50px 15px -50px rgb(223, 223, 223);
+  }
+  100%{
+      box-shadow: inset 0px -1px 2px 1px rgb(47, 47, 47),
+      inset 5px 2px 5px rgb(47, 47, 47),
+      inset -4.5px 2px 5px rgb(47, 47, 47),
+      inset 0 -50px 14px -50px rgb(223, 223, 223);
+  }
+}
+/* Screenshare popup end */
 
 
 
@@ -1290,8 +1337,7 @@ background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(
 
 
 
-
-/*Titlebar*/
+/*Titlebar. whiite*/
 
 
 
@@ -1338,4 +1384,24 @@ background-color: rgb(25, 120, 229);
 .theme-light, .typeWindows_a934d8>div:nth-child(4):active, .typeWindows_a934d8.withFrame_a934d8.titleBar_a934d8.theme-dark>div:nth-child(4):active {
 background-color: rgb(25, 120, 229);
 /*titlebar minimize button pressed*/
+}
+
+
+
+/* Hot fixes, omg they are so hot*/
+.avatarDecoration_f9f2ca{
+  /*this might break somewhere*/
+  left: 8px;
+  margin-top: 0;
+}
+
+/*checkbox ugh*/
+.checkbox_f6cde8.box_f6cde8.checked_f6cde8, .box_f6cde8{
+  border-color: white !important;
+  background-color: rgb(43, 43, 43) !important;
+}
+
+/*profile bubble*/
+.statusBubbleOuter_af9888:before, .statusBubbleOuter_af9888, statusBubble_af9888.statusBubbleShape_af9888.statusBubbleWithTextPadding_af9888.statusBubbleWithTextMinWidth_af9888.statusBubbleCopyStatusCursor_af9888, .statusBubble_af9888{
+  background-color: rgb(47,47,47) !important;
 }
