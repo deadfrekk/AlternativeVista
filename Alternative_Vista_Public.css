@@ -1,7 +1,7 @@
 /**
  * @name Alternative Vista 3
  * @author Frekk
- * @version 1.6
+ * @version 1.6.1
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
@@ -1394,7 +1394,14 @@ background-color: rgb(25, 120, 229);
   left: 8px;
   margin-top: 0;
 }
-
+/*activity*/
+.container_a3d172{
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+}
+/*reaction*/
+.reaction_ec6b19{
+  background:rgb(43,43,43);
+}
 /*checkbox ugh*/
 .checkbox_f6cde8.box_f6cde8.checked_f6cde8, .box_f6cde8{
   border-color: white !important;
