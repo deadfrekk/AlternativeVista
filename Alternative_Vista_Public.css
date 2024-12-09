@@ -1,14 +1,14 @@
 /**
- * @name Alternative Vista 3
+ * @name Alternative Vista
  * @author Frekk
- * @version 1.7
+ * @version 1.9
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
 */
 
 :root{
-  --hueshift: 50deg;
+  --hueshift: 0deg;
 }
 
 /*i though the scheme was a little too dark*/
@@ -41,7 +41,11 @@
 .sticker_de4721,
 .avatarDecoration_f9f2ca,
 .avatar_c51b4e,
-.icon_a64689
+.icon_a64689,
+.artworkActionable_f61cb8.artwork_f61cb8,
+.coverImageActionable_f61cb8.coverImage_f61cb8.blurred_f61cb8,
+.username_f9f2ca.desaturateUserColors_c7819f.clickable_f9f2ca,
+.nameAndDecorators_d808b0
 {
   filter: brightness(0.80) contrast(0.9) hue-rotate(calc(-1*var(--hueshift)));
 }
@@ -1446,7 +1450,10 @@ background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(
 .actionButton_e01b91, .actionButton_e01b91.actionAccept_e01b91.highlight_e01b91{
   background-color: rgb(43,43,43);
 }
-
+/*code mark up*/
+.markup_f8f345.code{
+  background: rgb((35), 35, 35);
+}
 /*loading something*/
 .layer_cd0de5{
   background: rgb(43,43,43) !important;
@@ -1465,6 +1472,11 @@ inset 0 -50px 15px -50px rgb(255, 255, 255);}
   box-shadow: 0 0 2px black;
   border-radius: 0;
 }
+/*listen along*/
+.invite_f61cb8.container_e96122{
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+}
+/*TODO: fix listen along user UI tab*/
 
 /* discord reload */
 .spinner_e40c16.ready_e40c16{
