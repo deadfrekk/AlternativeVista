@@ -1,7 +1,7 @@
 /**
  * @name Alternative Vista
  * @author Frekk
- * @version 1.10
+ * @version 1.11
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
@@ -12,7 +12,7 @@
 }
 
 /*i though the scheme was a little too dark*/
-.appMount_ea7e65{
+/*.appMount_ea7e65*/.notAppAsidePanel_bd26cc{
   filter: brightness(1.3) hue-rotate(var(--hueshift)); /**hue-rotate(50deg); blur(0.5px); aesthetic*/
   
 }
@@ -447,7 +447,7 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
 }
 
 .theme-dark.images-dark.layer_cd0de5{
-box-shadow: 0px 0px 50px black;
+box-shadow: 0px 0px 35px black;
 background: transparent !important;
 }
 .theme-dark.images-dark.layer_cd0de5.disabledPointerEvents_cd0de5{
@@ -939,6 +939,17 @@ box-shadow: 0 0 2px 0px rgb(134, 134, 134);
   /*transform: scale(1.01);*//*maybe this is too modern?*/
   box-shadow: 0 0 10px rgba(212, 0, 255, 0.788) !important;
   transition: 0.1s;
+}
+/*global search*/
+.searchBar_f0963d{
+  background: linear-gradient(rgb(47,47,47), rgb(47,47,47) 15%, rgb(61,61,61) 65%,rgb(47,47,47) 95%) !important;
+box-shadow: 
+inset 0 25px 30px -25px black,
+inset 0 12px 10px -11px white,
+inset 0 -10px 10px -17px rgb(101, 101, 101),
+inset 5px 0 5px -5px rgb(80, 80, 80),
+0 10px 10px -17px black,
+inset 0 -50px 10px -50px black !important;
 }
 /*search top */
 .searchBar_a46bef{
@@ -1580,12 +1591,36 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
   background-color: transparent;
   background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
 }
-.soundButtonRefresh_f40049{
+.soundButtonRefresh_f40049, .popoutContentWrapper_a35965{
   background: rgb(47,47,47) !important;
+  border-radius: 0;
 }
+.reactionBtn_ec6b19.largeReactionBtn_ec6b19.forceShow_ec6b19.forceShowLook_ec6b19{
+  background-color: transparent;
+}
+.reaction_ec6b19.reactionMe_ec6b19{
+  background-color: transparent;
+  border-color: transparent !important;
+  box-shadow: 0 0 2px green;
+}
+/*profile popup bg
+.animatorLeft_f88ae3.translate_f88ae3.didRender_f88ae3{
+  background: rgb(61, 61, 61);
+}
+.inner_c69a7b.biteSize_c69a7b{
+  background: transparent;
+}*/
 .wrapper_ba23fe.categoryList_ceda83{
   
 }
+/*THIS SHIT WAS SO HARD TO FIND*/
+.interactionsContainer_a35965{
+  background: transparent;
+}
+.full-motion.translate_f88ae3.didRender_f88ae3{
+  transition: 0s !important;
+}
+
 /*file upload*/
 .file_f46c86{
   border: 0px;
