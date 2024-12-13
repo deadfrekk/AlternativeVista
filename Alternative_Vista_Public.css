@@ -1,7 +1,7 @@
 /**
  * @name Alternative Vista
  * @author Frekk
- * @version 1.9
+ * @version 1.10
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
@@ -72,7 +72,7 @@ mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+Zp
 mask-size: contain !important;
 }
 .wrapper_c5f96a .svg_c5f96a foreignObject .wrapper_f90abb{
-  filter: opacity(70%) saturate(0.8);
+  filter: opacity(70%) saturate(0.7);
   transition: 0.2s;
 }
 .wrapper_c5f96a .svg_c5f96a foreignObject .wrapper_f90abb.selected_f90abb{
@@ -108,6 +108,12 @@ mask-size: contain !important;
   background: rgb(201, 3, 3);
   box-shadow: inset 0 10px 10px -5px rgb(255, 0, 0),
   inset 0 -15px 20px -10px rgb(138, 19, 19);
+}
+/* RECONNECT banner*/
+.notice_be03aa.colorDefault_be03aa{
+  background: rgb(40, 172, 46);
+  box-shadow: inset 0 10px 10px -5px rgb(49, 236, 49),
+  inset 0 -15px 20px -10px rgb(21, 80, 21);
 }
 /** end FIXME do it for streaming aswell **/
 
@@ -389,8 +395,19 @@ border-radius: 5px solid black !important;
 /*https://www.gradientmagic.com/collection/darkbg/gradient/1602197911880*/
 background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 
-box-shadow: inset 0 20px 20px -17px black,
+box-shadow: inset 0 20px 20px -17px rgb(255, 255, 255),
 inset -7px 0 10px -10px black;
+}
+/*edit server name handle*/
+.container_fd6364.clickable_fd6364{
+background: linear-gradient(rgb(47,47,47), rgb(47,47,47) 15%, rgb(61,61,61) 65%,rgb(47,47,47) 95%) !important;
+box-shadow: 
+inset 0 25px 30px -25px black,
+inset 0 12px 10px -11px white,
+inset 0 -10px 10px -17px rgb(101, 101, 101),
+inset 5px 0 5px -5px rgb(80, 80, 80),
+0 10px 10px -17px black,
+inset 0 -50px 10px -50px black;
 }
 .privateChannels_f0963d{
 /*background-Image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6081414.jpg&f=1&nofb=1&ipt=4ab42d88d55b20f4789501794fa7751de596e5730b037ace047337876758805e&ipo=images);*/
@@ -431,6 +448,7 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
 
 .theme-dark.images-dark.layer_cd0de5{
 box-shadow: 0px 0px 50px black;
+background: transparent !important;
 }
 .theme-dark.images-dark.layer_cd0de5.disabledPointerEvents_cd0de5{
 box-shadow: 0px 0px 0px transparent;/*2px white;emojies breaks this. i cant be bothered*/
@@ -633,7 +651,9 @@ font-size: 0.9rem !important;
 /*nav shadow. SHADOW GOVERNMENT ALSO NEED THEY NEED MONEY*/
 /*chat background & search chat background*/
 .chatContent_a7d72e, .searchResult_ddc613{
-background-image: linear-gradient(to bottom left, rgb(61, 61, 61), rgb(43,43,43) 50%, rgb(47,47,47)85%) !important;
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+
+background: linear-gradient(to bottom left, rgb(61, 61, 61), rgb(43,43,43) 50%, rgb(47,47,47)85%) !important;
 border: 1px;
 box-shadow: 
 inset 5px 0 15px -15px white;
@@ -668,6 +688,7 @@ inset 5px 0 15px -15px white;
 .contentWrapper_f7506e{
 background-color: transparent !important;
   background: rgb(47,47,47) !important;
+  border-radius: 0;
 }
 #gif-picker-tab-panel .header_b56bbc{
   background: transparent !important;
@@ -998,6 +1019,18 @@ box-shadow: inset 0 20px 20px -17px black,
 inset 0 -10px 10px -17px rgb(101, 101, 101),
 inset 5px 0 5px -5px rgb(80, 80, 80),
 0 10px 10px -17px black;
+}
+/* edit */ /*handle for mac, idk how it looks on windows*/
+.title_a7d72e.container_fc4f04.themed_fc4f04{
+background: linear-gradient(rgb(47,47,47), rgb(47,47,47) 15%, rgb(61,61,61) 65%,rgb(47,47,47) 95%) !important;
+box-shadow: 
+inset 0 25px 30px -25px black,
+inset 0 12px 10px -11px white,
+/*inset 0 8px 6px -7px white,*/
+inset 0 -10px 10px -17px rgb(101, 101, 101),
+/*inset 5px 0 5px -5px rgb(80, 80, 80),*/
+0 10px 10px -17px black,
+inset 0 -50px 10px -50px black;
 }
 /*filter search*/
 .libraryFilter_e0264e .searchBar_e0264e.container_c18ec9.small_c18ec9{
@@ -1455,16 +1488,21 @@ background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(
   background: rgb((35), 35, 35);
 }
 /*loading something*/
-.layer_cd0de5{
+.layer_cd0de5, animatorRight_f88ae3{
   background: rgb(43,43,43) !important;
 }
 /*come back!! upload*/
 .upload_df1eaf/*, .wrapper_f7e168*/{
   background: transparent;
-  box-shadow: inset 0px -1px 2px 1px rgb(63, 63, 63),
-inset 5px 2px 5px rgb(63, 63, 63),
-inset -5px 2px 5px rgb(63, 63, 63),
-inset 0 -50px 15px -50px rgb(255, 255, 255);}
+  /*box-shadow: inset 0px -1px 2px 1px rgb(63, 63, 63),
+inset 10px 2px 5px rgb(63, 63, 63),
+inset -10px 2px 5px rgb(63, 63, 63),
+inset 0 -45px 15px -50px rgb(255, 255, 255);*/
+}
+.message_ddcc45{
+  background-color: transparent;
+  box-shadow: none;
+}
 
 /* TODO: make this Audio Player more retro*/
 .wrapperAudio_f72aac.wrapper_f72aac.newMosaicStyle_f72aac.embedWrapper_b558d0.mosaicItemContent_e5c1dc,.attachment_b52bef.newMosaicStyle_b52bef, .attachment_b52bef, .nonVisualMediaItemContainer_cda674, .mosaicItem_e5c1dc.mosaicItemFullWidth_e5c1dc.mosaicItemMediaMosaic_e5c1dc, .attachment_b52bef{
@@ -1472,11 +1510,28 @@ inset 0 -50px 15px -50px rgb(255, 255, 255);}
   box-shadow: 0 0 2px black;
   border-radius: 0;
 }
+.inner_c59af2.scrollableContainer_bdf0de.themedBackground_bdf0de, .input_f4e139, .container_e5da8b{
+  background: transparent !important;
+  box-shadow: 0 0 12px -10px white;
+  border-radius: 0;
+}
+.contentWrapper_f7506e{
+  background-image: linear-gradient(to bottom left, rgb(50, 50, 50), rgb(43,43,43) 30%, rgb(47,47,47)65%) !important;
+}
 /*listen along*/
 .invite_f61cb8.container_e96122{
 background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
 }
 /*TODO: fix listen along user UI tab*/
+/* time to fix the background of the listen along tab*/
+.listeningAlong_d4626d{
+  background-image: linear-gradient(green, rgb(43,43,43));
+}
+
+/*this info button is not nessecary*/
+.icon_d4626d .button_adca65.enabled_adca65.button_dd4f85.lookBlank_dd4f85.colorBrand_dd4f85.grow_dd4f85.button_adca65{
+  display: none;
+}
 
 /* discord reload */
 .spinner_e40c16.ready_e40c16{
@@ -1513,6 +1568,30 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
   content: "";
   z-index: -1;
   /*TODO: idk what twitter img im putting in, gotta find later background-image: url("");*/
+}
+
+/* no idea if ppl use bots anymore */
+.stackedBars_bdf0de{
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+}
+
+/*sound board*/
+.picker_cd703d.refresh_cd703d{
+  background-color: transparent;
+  background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+}
+.soundButtonRefresh_f40049{
+  background: rgb(47,47,47) !important;
+}
+.wrapper_ba23fe.categoryList_ceda83{
+  
+}
+/*file upload*/
+.file_f46c86{
+  border: 0px;
+  border-radius: 0;
+  background-color: transparent;
+/*box-shadow: inset 0 -40px 15px -50px rgb(255, 255, 255);*/
 }
 
 /*betterdiscordcsswindow*/
