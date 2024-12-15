@@ -1,18 +1,20 @@
 /**
- * @name Alternative Vista
+ * @name Alternative Vista 5
  * @author Frekk
- * @version 1.12
+ * @version 1.13 Color Update
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
- * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
+ * @source https://github.com/deadfrekk/AlternativeVista/tree/main
 */
 
 :root{
   --hueshift: 0deg;
+  --color43: rgb(43,45,43);
+  --color47: rgb(47,49,47); 
 }
 
 /*i though the scheme was a little too dark*/
-.appMount_ea7e65{
+/*.appMount_ea7e65*/ .container_a4d4d9{
   filter: brightness(1.3) hue-rotate(var(--hueshift)); /**hue-rotate(50deg); blur(0.5px); aesthetic*/
   
 }
@@ -128,7 +130,7 @@ mask-size: contain !important;
 }
 /*emoji picker popup*/
 .contentWrapper_af5dbb{
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 border-radius: 0;
 }
 .container_bdea70{
@@ -136,14 +138,14 @@ border-radius: 0;
   border-radius: 0;
 }
 .emojiPickerHeader_bdea70 {
-  background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+  background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 
 }
 .wrapper_e06857.header_a3bc57, .wrapper_e06857.packHeader_de4721{
-  background: linear-gradient(rgb(43,43,43), rgb(47,47,47), transparent);
+  background: linear-gradient(var(--color43), var(--color47), transparent);
 }
 .inspector_c3120f.inspector_c6ee36, .inspector_c3120f{
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
 }
 /** emoji end**/
 
@@ -323,29 +325,29 @@ background-color: rgb(25, 120, 229);
 }
 /*inbox for you wrapper*/
 .container_f1c3d9, .container_f8a938,.container_fe1358, .messagesPopoutWrap_ac90a2{
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43));
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43));
 }
 .channel_d09ffd .channelHeader_f3978e, .channelHeader_f3978e{
   background: transparent;
 }
 .messageContainer_ddb5b4{
-  background: rgb(43,43,43);
+  background: var(--color43);
 }
 
 /*inbox messages*/
 .messages_c06487{
-background: rgb(43,43,43);
+background: var(--color43);
 }
 /*server list background Fix me later*/
 .wrapper_fea3ef{
-/*background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43));*/
+/*background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43));*/
 /*background: rgb(43, 43, 43);*/
 background: rgb(30, 30, 30);
 box-shadow: 
 inset 2px 130px 100px -55px rgb(23, 23, 23)/*inset 0 10px 20px -17px black,*/,
 inset 2px -150px 150px -55px rgb(23, 23, 23),
 inset -10px 0 5px -10px rgba(255, 255, 255, 0.51),
-/*inset 0px -250px 100px -15px rgb(43,43,43)*/
+/*inset 0px -250px 100px -15px var(--color43)*/
 inset 0 -15px 10px -15px black;
 }
 /*server folder*/
@@ -393,14 +395,14 @@ border-radius: 5px solid black !important;
 .container_fd6364, .searchHeader_b7c924 {
 /*background-Image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6081414.jpg&f=1&nofb=1&ipt=4ab42d88d55b20f4789501794fa7751de596e5730b037ace047337876758805e&ipo=images);*/
 /*https://www.gradientmagic.com/collection/darkbg/gradient/1602197911880*/
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 
 box-shadow: inset 0 20px 20px -17px rgb(255, 255, 255),
 inset -7px 0 10px -10px black;
 }
 /*edit server name handle*/
 .container_fd6364.clickable_fd6364{
-background: linear-gradient(rgb(47,47,47), rgb(47,47,47) 15%, rgb(61,61,61) 65%,rgb(47,47,47) 95%) !important;
+background: linear-gradient(var(--color47), var(--color47) 15%, rgb(61,61,61) 65%,var(--color47) 95%) !important;
 box-shadow: 
 inset 0 25px 30px -25px black,
 inset 0 12px 10px -11px white,
@@ -412,38 +414,38 @@ inset 0 -50px 10px -50px black;
 .privateChannels_f0963d{
 /*background-Image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6081414.jpg&f=1&nofb=1&ipt=4ab42d88d55b20f4789501794fa7751de596e5730b037ace047337876758805e&ipo=images);*/
 /*https://www.gradientmagic.com/collection/darkbg/gradient/1602197911880*/
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 box-shadow: inset 0 20px 20px -17px black;
 }
 /*profile card*/
 .inner_c69a7b{
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 }
 /**emoji popup window**/
 .header_d0dc1d{
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 }
 /*searchbar*/
 .container_c18ec9.medium_c18ec9{
-  background: rgb(43,43,43);
+  background: var(--color43);
 border-radius: 0px;
-box-shadow: inset 0 0 5px rgb(47,47,47);
+box-shadow: inset 0 0 5px var(--color47);
 }
 /*background*/
 scroller_d53d65.thin_c49869.scrollerBase_c49869{
-  background:rgb(47,47,47);
+  background:var(--color47);
 }
 /** end **/
 
 /*new thread background*/
 .form_fb4810{
-  background: rgb(47,47,47);
+  background: var(--color47);
 }
 /** end **/
 
 /*suppression popup*/
 .didRender_f88ae3, .noiseCancellationPopout_adcaac{
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
 }
 
 .theme-dark.images-dark.layer_cd0de5{
@@ -455,39 +457,39 @@ box-shadow: 0px 0px 0px transparent;/*2px white;emojies breaks this. i cant be b
 border-radius: 0px;
 }
 .activity_a972fe, :where(.overlay_c69a7b){
-background: rgb(43,43,43);
+background: var(--color43);
 }
 .container_cbd271{
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 /*change later - maybe orangefy the bitchple to make ocntrast?*/
 }
 /*channel list bg*/
 .scrollerBase_eed6a8  {
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43));
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43));
 box-shadow: inset 2px 90px 100px -55px rgb(23, 23, 23)/*inset 0 10px 20px -17px black,*/,
-/*inset 0px -250px 100px -15px rgb(43,43,43)*/
+/*inset 0px -250px 100px -15px var(--color43)*/
 inset 0 -15px 10px -15px black;
 }
 /*friendlist*/
 .theme-dark .scroller_c47fa9{
 background: transparent;
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43));
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43));
 box-shadow: inset 2px 90px 100px -55px rgb(23, 23, 23)/*inset 0 10px 20px -17px black,*/,
-/*inset 0px -250px 100px -15px rgb(43,43,43)*/
+/*inset 0px -250px 100px -15px var(--color43)*/
 inset 0 -15px 10px -15px black;
 }
 
 /*user action panel*/
 .panels_a4d4d9{
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 box-shadow: inset 0 -75px 60px -45px black;
 border-top: 2px green,;
 }
 .container_adcaac{
-/*background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));*/
+/*background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));*/
 background: transparent !important;
 border: 0;
-/*background-color: rgb(43,43,43) !important;*/
+/*background-color: var(--color43) !important;*/
 }
 .container_b2ca13{
 background: transparent !important;
@@ -643,24 +645,24 @@ font-size: 0.9rem !important;
 /* chat fade low taper*/
 .form_a7d72e.formWithLoadedChatInput_a7d72e{
   box-shadow: 
-  0 -10px 10px rgb(47,47,47),
+  0 -10px 10px var(--color47),
   inset 5px 0 15px -18px white,
-  inset 0 100px 30px -50px rgb(47,47,47);
+  inset 0 100px 30px -50px var(--color47);
   /*get back here*/
 }
 /*nav shadow. SHADOW GOVERNMENT ALSO NEED THEY NEED MONEY*/
 /*chat background & search chat background*/
 .chatContent_a7d72e, .searchResult_ddc613{
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 
-background: linear-gradient(to bottom left, rgb(61, 61, 61), rgb(43,43,43) 50%, rgb(47,47,47)85%) !important;
+background: linear-gradient(to bottom left, rgb(61, 61, 61), var(--color43) 50%, var(--color47)85%) !important;
 border: 1px;
 box-shadow: 
 inset 5px 0 15px -15px white;
 }
 /*seperator bg*/
 .content_c2654d{
-  background: rgb(43,43,43);
+  background: var(--color43);
   color: grey;
 }
 /*seperator color*/
@@ -670,12 +672,12 @@ inset 5px 0 15px -15px white;
 }
 /*message action hover popup*/
 .popoverReactionHoverBar_e986d9{
-  background: rgb(47,47,47) ;
-  box-shadow: inset 0 0 20px rgb(43,43,43);
+  background: var(--color47) ;
+  box-shadow: inset 0 0 20px var(--color43);
 }
 .popoverReactionHoverBar_e986d9:hover{
-  background: rgb(47,47,47) ;
-  box-shadow: inset 0 0 20px rgb(43,43,43);
+  background: var(--color47) ;
+  box-shadow: inset 0 0 20px var(--color43);
 }
 
 /** end **/
@@ -683,11 +685,11 @@ inset 5px 0 15px -15px white;
 .root_ebf21e .contentWrapper_f7506e{
   border-radius: 0px;
   background-color: transparent !important;
-  background: rgb(47,47,47) !important;
+  background: var(--color47) !important;
 }
 .contentWrapper_f7506e{
 background-color: transparent !important;
-  background: rgb(47,47,47) !important;
+  background: var(--color47) !important;
   border-radius: 0;
 }
 #gif-picker-tab-panel .header_b56bbc{
@@ -736,10 +738,10 @@ background-color: transparent !important;
 /* channel warning */
 .footer_f9a4c9{
   box-shadow: inset 0 10px 10px -15px white !important;
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
 }
 .container_acae5d.root_f9a4c9.small_f9a4c9.fullscreenOnMobile_f9a4c9.rootWithShadow_f9a4c9{
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 }
 /** semi end **/
 /** warning buttons and other**/
@@ -878,7 +880,7 @@ background-color: rgba(255, 255, 255, 0.094);
 width: 17px;
 }*/
 .managedReactiveScroller_c49869::-webkit-scrollbar-track {
-background-image: linear-gradient(rgba(255, 255, 255, 0.148),rgb(47,47,47),45%,rgb(43,43,43)) !important;
+background-image: linear-gradient(rgba(255, 255, 255, 0.148),var(--color47),45%,var(--color43)) !important;
 border-radius: 0px;
 height: 50px !important;
 }
@@ -915,7 +917,7 @@ border-radius: 0px;
 }
 /*embed color & search result background color*/
 .gridContainer_b0068a, .searchResultsWrap_c2b47d{
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43));
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43));
 box-shadow: 0 0 2px 0px rgb(134, 134, 134);
 }
 
@@ -942,7 +944,7 @@ box-shadow: 0 0 2px 0px rgb(134, 134, 134);
 }
 /*global search*/
 .searchBar_f0963d, .theme-dark.images-dark.container_fc4f04.themed_fc4f04{
-  background: linear-gradient(rgb(47,47,47), rgb(47,47,47) 15%, rgb(61,61,61) 65%,rgb(47,47,47) 95%) !important;
+  background: linear-gradient(var(--color47), var(--color47) 15%, rgb(61,61,61) 65%,var(--color47) 95%) !important;
 box-shadow: 
 inset 0 25px 30px -25px black,
 inset 0 12px 10px -11px white,
@@ -969,7 +971,7 @@ inset 0 -50px 15px -50px rgb(255, 255, 255);
 
 /*event popup*/
 .header_fa4e6d{
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 }
 .biteSize_c69a7b{
 border-radius: 5px 5px 0px 0px !important;
@@ -977,7 +979,7 @@ outline: 2px solid rgb(43, 43, 43);
 }
 /*server settings popup*/
 .menu_d90b3d{
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 }
 /*app activity*/
 activityPanel_a4d4d9
@@ -1021,11 +1023,11 @@ background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.073)
 }
 /*member list bg*/
 .member_cbd271{
-background-color: rgb(47,47,47);
+background-color: var(--color47);
 }
 /*interactive titlebar*/
 .themed_fc4f04{
-background: rgb(47,47,47) !important;
+background: var(--color47) !important;
 box-shadow: inset 0 20px 20px -17px black,
 inset 0 -10px 10px -17px rgb(101, 101, 101),
 inset 5px 0 5px -5px rgb(80, 80, 80),
@@ -1033,7 +1035,7 @@ inset 5px 0 5px -5px rgb(80, 80, 80),
 }
 /* edit */ /*handle for mac, idk how it looks on windows*/
 .title_a7d72e.container_fc4f04.themed_fc4f04{
-background: linear-gradient(rgb(47,47,47), rgb(47,47,47) 15%, rgb(61,61,61) 65%,rgb(47,47,47) 95%) !important;
+background: linear-gradient(var(--color47), var(--color47) 15%, rgb(61,61,61) 65%,var(--color47) 95%) !important;
 box-shadow: 
 inset 0 25px 30px -25px black,
 inset 0 12px 10px -11px white,
@@ -1045,14 +1047,14 @@ inset 0 -50px 10px -50px black;
 }
 /*filter search*/
 .libraryFilter_e0264e .searchBar_e0264e.container_c18ec9.small_c18ec9{
-    background: rgb(43,43,43);
+    background: var(--color43);
 border-radius: 0px;
-box-shadow: inset 0 0 5px rgb(47,47,47);
+box-shadow: inset 0 0 5px var(--color47);
 border: 1px solid black;
 }
 /*library settings page*/
 .scroller_c100ff.auto_c49869.scrollerBase_c49869{
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 box-shadow: inset 0 0 10px black;
 /*filter:sepia(0.1);*/
 }
@@ -1082,7 +1084,7 @@ box-shadow:
 inset 2px -2px 2px white;
 }
 .contentRegionScroller_c25c6d::-webkit-scrollbar-track{
-background-image: linear-gradient(rgba(255, 255, 255, 0.148),rgb(47,47,47),45%,rgb(43,43,43)) !important;
+background-image: linear-gradient(rgba(255, 255, 255, 0.148),var(--color47),45%,var(--color43)) !important;
 border-radius: 0px;
 }
 .contentRegionScroller_c25c6d::-webkit-scrollbar-thumb {
@@ -1295,7 +1297,7 @@ animation: 4s scanAnim infinite linear;
 /*friends discord tab search*/
 .peopleColumn_c2739c{
 box-shadow: inset 0 20px 60px -25px black;
-background: rgb(43,43,43);
+background: var(--color43);
 }
 .peopleColumn_c2739c .scrollerBase_eed6a8{
 
@@ -1309,7 +1311,7 @@ box-shadow: inset 2px 90px 100px -55px rgb(23, 23, 23), inset 0 -15px 10px -15px
 
 /*library*/
 .container_a94980 .scroller_ad8f79{
-background: rgb(43,43,43) !important;
+background: var(--color43) !important;
 }
 /*message requests. maybe it just looks fine with default color?*/
 .image_a3747e{
@@ -1317,10 +1319,10 @@ display: none;
 }
 /*popup chat command left*/
 .wrapper_efd8e6, .wrapper_ba23fe.list_efd8e6{
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
 }
 .autocomplete_bcc24e {
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 }
 .outerWrapper_fe2299 {
     border-radius: 0;
@@ -1330,10 +1332,10 @@ wrapper_e06857 categoryHeader_fe2299{
 }
 /*reply banner*/
 .replyBar_b11c5e, .threadSuggestionBar_b11c5e{
-  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
 }
 .quickswitcher_f4e139{
-  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
 }
 .quickswitcher_f4e139 .input_f4e139{
   background-color: transparent;
@@ -1356,13 +1358,13 @@ wrapper_e06857 categoryHeader_fe2299{
 }
 /*bg*/
 .root_f9a4c9{
-  background-color: rgb(47,47,47);
+  background-color: var(--color47);
   border-radius: 0px;
 }
 /*option background*/
 .modalContent_e1cc86 .card_f30ffe{
   border-radius: 0;
-  background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+  background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 }
 /*footer*/
 .footerSeparator_f9a4c{
@@ -1454,11 +1456,11 @@ background-color: rgb(25, 120, 229);
 }
 /*activity*/
 .container_a3d172{
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
 }
 /*reaction*/
 .reaction_ec6b19{
-  background:rgb(43,43,43);
+  background:var(--color43);
 }
 /*checkbox ugh*/
 .checkbox_f6cde8.box_f6cde8.checked_f6cde8, .box_f6cde8{
@@ -1468,18 +1470,18 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
 
 /*profile bubble*/
 .statusBubbleOuter_af9888:before, .statusBubbleOuter_af9888, statusBubble_af9888.statusBubbleShape_af9888.statusBubbleWithTextPadding_af9888.statusBubbleWithTextMinWidth_af9888.statusBubbleCopyStatusCursor_af9888, .statusBubble_af9888{
-  background-color: rgb(47,47,47) !important;
+  background-color: var(--color47) !important;
 }
 
 /*active now tab*/
 .scroller_bf550a.thin_c49869.scrollerBase_c49869{
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 }
 .card_ae5e0b.outer_ac5d22.padded_ac5d22, .itemCard_f02fcf.wrapper_cd82a7.outer_ac5d22.padded_ac5d22.interactive_ac5d22{
-  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
 }
 .section_cd82a7, .body_cd82a7.inset_ac5d22{
-  /*background-image: linear-gradient(to bottom right, rgb(47,47,47), rgb(43,43,43));*/ /* wierd decision frank*/
+  /*background-image: linear-gradient(to bottom right, var(--color47), var(--color43));*/ /* wierd decision frank*/
   background-color: transparent;
   border-radius: 0 !important;
   box-shadow: 0 0 5px rgb(53, 53, 53),
@@ -1492,7 +1494,7 @@ background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(
   border-radius: 0;
 }
 .actionButton_e01b91, .actionButton_e01b91.actionAccept_e01b91.highlight_e01b91{
-  background-color: rgb(43,43,43);
+  background-color: var(--color43);
 }
 /*code mark up*/
 .markup_f8f345.code{
@@ -1500,7 +1502,7 @@ background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(
 }
 /*loading something*/
 .layer_cd0de5, animatorRight_f88ae3{
-  background: rgb(43,43,43) !important;
+  background: var(--color43) !important;
 }
 /*come back!! upload*/
 .upload_df1eaf/*, .wrapper_f7e168*/{
@@ -1517,7 +1519,7 @@ inset 0 -45px 15px -50px rgb(255, 255, 255);*/
 
 /* TODO: make this Audio Player more retro*/
 .wrapperAudio_f72aac.wrapper_f72aac.newMosaicStyle_f72aac.embedWrapper_b558d0.mosaicItemContent_e5c1dc,.attachment_b52bef.newMosaicStyle_b52bef, .attachment_b52bef, .nonVisualMediaItemContainer_cda674, .mosaicItem_e5c1dc.mosaicItemFullWidth_e5c1dc.mosaicItemMediaMosaic_e5c1dc, .attachment_b52bef{
-  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
   box-shadow: 0 0 2px black;
   border-radius: 0;
 }
@@ -1527,16 +1529,16 @@ inset 0 -45px 15px -50px rgb(255, 255, 255);*/
   border-radius: 0;
 }
 .contentWrapper_f7506e{
-  background-image: linear-gradient(to bottom left, rgb(50, 50, 50), rgb(43,43,43) 30%, rgb(47,47,47)65%) !important;
+  background-image: linear-gradient(to bottom left, rgb(50, 50, 50), var(--color43) 30%, var(--color47)65%) !important;
 }
 /*listen along*/
 .invite_f61cb8.container_e96122{
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 }
 /*TODO: fix listen along user UI tab*/
 /* time to fix the background of the listen along tab*/
 .listeningAlong_d4626d{
-  background-image: linear-gradient(green, rgb(43,43,43));
+  background-image: linear-gradient(green, var(--color43));
 }
 
 /*this info button is not nessecary*/
@@ -1549,7 +1551,7 @@ background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(
   display: none;
 }
 .container_e40c16.fixClipping_c7e9c6{
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
   animation: 0.7s discordDied ease-in infinite alternate;
 }
 @keyframes discordDied{
@@ -1583,16 +1585,16 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
 
 /* no idea if ppl use bots anymore */
 .stackedBars_bdf0de{
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
 }
 
 /*sound board*/
 .picker_cd703d.refresh_cd703d{
   background-color: transparent;
-  background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+  background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 }
 .soundButtonRefresh_f40049, .popoutContentWrapper_a35965{
-  background: rgb(47,47,47) !important;
+  background: var(--color47) !important;
   border-radius: 0;
 }
 .reaction_ec6b19.reactionMe_ec6b19{
@@ -1621,10 +1623,22 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
   display: none;
 }
 
+/*download icon*/
+.nonMediaMosaicItem_d0395d{
+  top: 0;
+  right: 0;
+  opacity: 1;
+  background-color: transparent;
+  outline: 0;
+}
+.hoverButtonGroup_d0395d{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 /*betterdiscordcsswindow*/
 .floating-window-titlebar{
-background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
+background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
 }
 #bd-editor-controls{
-background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43)) !important;
+background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
 }
