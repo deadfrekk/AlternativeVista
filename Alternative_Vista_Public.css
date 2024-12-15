@@ -941,7 +941,7 @@ box-shadow: 0 0 2px 0px rgb(134, 134, 134);
   transition: 0.1s;
 }
 /*global search*/
-.searchBar_f0963d{
+.searchBar_f0963d, .theme-dark.images-dark.container_fc4f04.themed_fc4f04{
   background: linear-gradient(rgb(47,47,47), rgb(47,47,47) 15%, rgb(61,61,61) 65%,rgb(47,47,47) 95%) !important;
 box-shadow: 
 inset 0 25px 30px -25px black,
