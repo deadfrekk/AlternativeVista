@@ -1724,8 +1724,22 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
   background-color: transparent;
   outline: 0;
 }
+/* FIX ME TODO get the var in there */
 .hoverButtonGroup_d0395d{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(96, 98, 96, 0.5);
+}
+.wrapper_d8bfb3:hover .link_d8bfb3{
+  background-color: rgba(0, 3, 0, 0.5);
+}
+.wrapper_d8bfb3:active .link_d8bfb3{
+  background-color: rgba(30, 33, 30, 0.5);
+}
+.membersWrap_cbd271.hiddenMembers_cbd271 .scrollerBase_eed6a8{
+      box-shadow: inset 2px 90px 100px -55px rgb(23, 23, 23) !important;
+}
+
+.modeSelected_d8bfb3 .link_d8bfb3, .modeSelected_d8bfb3:hover .link_d8bfb3{
+  background: rgba(96,98,96,0.5);
 }
 
 /*betterdiscordcsswindow*/
