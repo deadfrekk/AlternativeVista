@@ -1655,6 +1655,41 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
   background-color: transparent;
 }
 
+/*sever guide and channel roles hotfix*/
+
+.chat_a7d72e.background_e85cee, .content_a7d72e.container_f1fd9c{
+    background-image: linear-gradient(to bottom left, var(--color47), var(--color43)) !important;
+    box-shadow: inset 10px 0px 15px -15px black;
+}
+.title_e85cee.background_e85cee.forumOrHome_ff5f90.container_fc4f04.themed_fc4f04, .header_f1fd9c.container_fc4f04.themed_fc4f04{
+background: linear-gradient(var(--color47), var(--color47) 15%, rgb(61,61,61) 65%,var(--color47) 95%) !important;
+box-shadow: 
+inset 0 25px 30px -25px black,
+inset 0 12px 10px -11px white,
+/*inset 0 8px 6px -7px white,*/
+inset 0 -10px 10px -17px rgb(101, 101, 101),
+/*inset 5px 0 5px -5px rgb(80, 80, 80),*/
+0 10px 10px -17px black,
+inset 0 -50px 10px -50px black;
+}
+.action_e3f878, .prompt_c6b11b{
+  background-color: rgba(93, 96, 93, 0.1);
+}
+.checkIcon_bd5e1f{
+    background-color: green;
+}
+
+.auto_c49869.scrollerBase_c49869::-webkit-scrollbar-track{
+background-image: linear-gradient(rgba(255, 255, 255, 0.148),var(--color47),45%,var(--color43)) !important;
+border-radius: 0px;
+}
+.auto_c49869.scrollerBase_c49869::-webkit-scrollbar-thumb {
+border-radius: 0px;
+background-image: repeating-linear-gradient(0deg, hsla(265,0%,47%,0.4) 0px, hsla(265,0%,47%,0.4) 1px,transparent 1px, transparent 3px),repeating-linear-gradient(90deg, hsla(265,0%,47%,0.4) 0px, hsla(265,0%,47%,0.4) 1px,transparent 1px, transparent 3px),linear-gradient(90deg, rgb(97,97,97),rgb(97,97,97));
+}
+
+/*end sever guide and channel roles hotfix*/
+
 /*betterdiscordcsswindow*/
 .floating-window-titlebar{
 background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
