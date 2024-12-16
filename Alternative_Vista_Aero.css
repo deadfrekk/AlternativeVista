@@ -1,7 +1,7 @@
 /**
- * @name Alternative Vista
+ * @name Alternative Vista 6
  * @author Frekk
- * @version 1.15 aero Update
+ * @version 1.16 aero Update
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
@@ -38,8 +38,9 @@
   border-radius: 5px;
   margin: 5px;
   position: relative;
-  top: -26px;
-  padding-top: 21px;
+  top: -25px;
+  padding-top: 20px;
+  padding-bottom: 0px !important;
   margin-top: 2px;
   margin-bottom: -21px;
   box-shadow: 0 0 7px 0px black;
@@ -263,6 +264,12 @@ border-radius: 0px;
 .platform-osx .scroller_fea3ef {
 padding-top: 5px !important;
 }
+.bg_d4b6c5{
+  display: none;
+}
+.typeWindows_a934d8.withFrame_a934d8.titleBar_a934d8{
+  top: 1px;
+}
 /*.theme-dark .bg_d4b6c5, .bg_d4b6c5.theme-dark, .theme-dark .titleBar_a934d8.withBackgroundOverride_a934d8 {
 background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAZACAIAAAA3o78tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAABISURBVFhH7cy5CcBAEENRMd0Yw/bf3Erey+AKHP3gISmY0XW3klRJVkoZ/c3dE58+OOW5T9pfvdy9bvcvAAAAAAAAAACAn0kPVfM9uNZklA0AAAAASUVORK5CYII=) !important;
 border-left: 0px solid rgb(92,92,92) !important;
@@ -271,23 +278,23 @@ border-top: 0px solid rgb(92,92,92) !important;
 padding-right: 13px;
 
 }*/
-.theme-light .bg_d4b6c5, .theme-light .titleBar_a934d8.withBackgroundOverride_a934d8 {
+/*.theme-light .bg_d4b6c5, .theme-light .titleBar_a934d8.withBackgroundOverride_a934d8 {
 background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAZACAIAAAA3o78tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAABBSURBVFhH7cjBCYAwFETBJf13qpaQfBMJghV4mcPw2M11Hq1qtNGn0afVbf416m3VV7Kap0n2tzYAAAAAAMBPkhtn0z/6lMGuUAAAAABJRU5ErkJggg==);
 border-left: 0px solid rgb(60,60,60);
 border-right: 0px solid rgb(60,60,60);
 border-top: 0px solid rgb(60,60,60);
 padding-right: 13px;
-}
-.custom-theme-background.theme-dark .titleBar_a934d8, .theme-dark .titleBar_a934d8.withBackgroundOverride_a934d8 {
+}*/
+/*.custom-theme-background.theme-dark .titleBar_a934d8, .theme-dark .titleBar_a934d8.withBackgroundOverride_a934d8 {
 border-left: 0px solid rgb(92,92,92) !important;
 border-right: 0px solid rgb(92,92,92) !important;
 border-top: 0px solid rgb(92,92,92) !important;
-}
-.custom-theme-background.theme-light .titleBar_a934d8, .theme-light .titleBar_a934d8.withBackgroundOverride_a934d8 {
+}*/
+/*.custom-theme-background.theme-light .titleBar_a934d8, .theme-light .titleBar_a934d8.withBackgroundOverride_a934d8 {
 border-left: 0px solid rgb(60,60,60);
 border-right: 0px solid rgb(60,60,60);
 border-top: 0px solid rgb(60,60,60);
-}
+}*/
 .titleBar_a934d8.withBackgroundOverride_a934d8.withFrame_a934d8 {
 margin-top: 0 !important;
 height: 21px;
