@@ -33,6 +33,33 @@
     background-image: linear-gradient(var(--color47),var(--color43)) !important;
   z-index: 1;
 }
+
+.appAsidePanelWrapper_bd26cc{
+  border-radius: 5px;
+  margin: 5px;
+  position: relative;
+  top: -26px;
+  padding-top: 21px;
+  margin-top: 2px;
+  margin-bottom: -21px;
+  box-shadow: 0 0 7px 0px black;
+  background-image: linear-gradient(transparent,transparent) !important;
+}
+.notAppAsidePanel_bd26cc{
+  border: 7px solid var(--color43);
+}
+
+.typeWindows_a934d8.withFrame_a934d8.titleBar_a934d8{
+    position: relative;
+    border-radius: 5px;
+    top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 4px;
+    /*box-shadow: 10px -10px 5px -5px black, -10px -10px 5px -5px black;*/
+    background-image: linear-gradient(var(--color47),var(--color43)) !important;
+  z-index: 1;
+}
 .winButtonClose_a934d8.winButton_a934d8, .winButtonMinMax_a934d8.winButton_a934d8{
   right: 5px;
   border-top: 0;
@@ -40,19 +67,13 @@
 .wordmarkWindows_a934d8.wordmark_a934d8{
   top: 3px;
 }
-.appAsidePanelWrapper_bd26cc{
-  border-radius: 5px;
-  margin: 5px;
-  position: relative;
-  top: -26px;
-  padding-top: 21px;
-  margin-bottom: -21px;
-  box-shadow: 0 0 7px black;
-  background-image: linear-gradient(transparent,transparent) !important;
+
+
+.tools_c25c6d{
+  right: 25px;
 }
-.notAppAsidePanel_bd26cc{
-  border: 7px solid var(--color43);
-}
+
+
 /* END aero window simulation*/
 
 :root{
@@ -309,7 +330,7 @@ box-shadow: 0 0 2px #fff,
       inset 0px 20px 15px -20px rgb(251, 112, 84);
 border-radius: 0px 0px 2px 0px;
 min-width: 48px;
-margin-right: 13px;
+/*margin-right: 13px;*/ /*legacy fix for skeuocord theme*/
 position: relative;
 background-color: rgb(139, 24, 24);
 /*titlebar close button*/
