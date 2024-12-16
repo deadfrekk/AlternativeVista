@@ -1,5 +1,5 @@
 /**
- * @name Alternative Vista 5
+ * @name Alternative Vista MacOs
  * @author Frekk
  * @version 1.14 Grain Update
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
@@ -1649,6 +1649,10 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
 }
 .hoverButtonGroup_d0395d{
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.member_a31c43.member_cbd271.offline_a31c43.container_d808b0.clickable_d808b0{
+  background-color: transparent;
 }
 
 /*betterdiscordcsswindow*/
