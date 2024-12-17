@@ -1,8 +1,12 @@
 /**
  * @name Alternative Vista
  * @author Frekk
- * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
+ * @description Cutting edge 2015 theme. Inspired by skeuomorphism, windows aero and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @version Auto Update
  */
 
-@import url("https://deadfrekk.github.io/AlternativeVista/Alternative_Vista_Public.css");
+@import url("https://deadfrekk.github.io/AlternativeVista/Alternative_Vista_Universal.css");
+
+
+/* Delete this if you are on MacOs or do not want window drop shadow*/
+@import url("https://deadfrekk.github.io/AlternativeVista/Aero_Window_Simulation.css");
