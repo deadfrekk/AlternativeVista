@@ -1,7 +1,7 @@
 /**
  * @name Alternative Vista Unset OS
  * @author Frekk
- * @version 1.19
+ * @version 1.20
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
@@ -1704,10 +1704,10 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
   background-color: rgba(96, 98, 96, 0.5);
 }
 .wrapper_d8bfb3:hover .link_d8bfb3{
-  background-color: rgba(0, 3, 0, 0.5);
+  background-color: rgba(30, 33, 30, 0.5);
 }
 .wrapper_d8bfb3:active .link_d8bfb3{
-  background-color: rgba(30, 33, 30, 0.5);
+  background-color: rgba(20, 23, 20, 0.5);
 }
 .membersWrap_cbd271.hiddenMembers_cbd271 .scrollerBase_eed6a8{
       box-shadow: inset 2px 90px 100px -55px rgb(23, 23, 23) !important;
