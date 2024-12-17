@@ -52,4 +52,12 @@
     padding-top: 7px;
 }
 
+
+.appMount_ea7e65, body{
+  border-radius: 7px;
+  background: transparent !important;
+  
+  
+}
+
 /* END aero window simulation*/
