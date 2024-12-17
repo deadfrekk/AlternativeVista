@@ -1,0 +1,55 @@
+/*aero window simulation*/
+.titleBar_a934d8.withBackgroundOverride_a934d8.withFrame_a934d8{
+    position: relative;
+    border-radius: 5px;
+    top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 3px;
+    /*box-shadow: 10px -10px 5px -5px black, -10px -10px 5px -5px black;*/
+    background-image: linear-gradient(var(--color47),var(--color43)) !important;
+  z-index: 1;
+}
+
+.appAsidePanelWrapper_bd26cc{
+  border-radius: 5px;
+  margin: 5px;
+  position: relative;
+  top: -25px;
+  padding-top: 20px;
+  padding-bottom: 0px !important;
+  margin-top: 2px;
+  margin-bottom: -21px;
+  box-shadow: 0 0 7px 0px black;
+  background-image: linear-gradient(transparent,transparent) !important;
+}
+.notAppAsidePanel_bd26cc{
+  border: 7px solid var(--color43);
+}
+
+.typeWindows_a934d8.withFrame_a934d8.titleBar_a934d8{
+    position: relative;
+    border-radius: 5px;
+    top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 4px;
+    /*box-shadow: 10px -10px 5px -5px black, -10px -10px 5px -5px black;*/
+    background-image: linear-gradient(var(--color47),var(--color43)) !important;
+  z-index: 1;
+}
+.winButtonClose_a934d8.winButton_a934d8, .winButtonMinMax_a934d8.winButton_a934d8{
+  right: 5px;
+  border-top: 0;
+}
+.wordmarkWindows_a934d8.wordmark_a934d8{
+  top: 3px;
+}
+.typeWindows_a934d8.withFrame_a934d8.titleBar_a934d8.withBackgroundOverride_a934d8{
+    padding-top: 3px;
+}
+.typeWindows_a934d8.withFrame_a934d8.titleBar_a934d8{
+    padding-top: 7px;
+}
+
+/* END aero window simulation*/
