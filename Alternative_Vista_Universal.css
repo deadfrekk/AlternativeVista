@@ -1,7 +1,7 @@
 /**
  * @name Alternative Vista Unset OS
  * @author Frekk
- * @version 1.17 unset os
+ * @version 1.18
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
@@ -122,28 +122,42 @@ mask-size: contain !important;
 }
 /**end**/
 /* WARNING banner*/
-.notice_be03aa.colorDanger_be03aa{
+.button_be03aa, .bd-notice-button{
+  color: black;
+  border-radius: 2;
+  border: 0;
+  border-bottom: 1px solid;
+  border-color: black;
+}
+.notice_be03aa.colorDanger_be03aa, .button_be03aa{
+  color: rgb(144, 142, 123);
+  font-weight: bold;
   background: rgb(201, 3, 3);
-  box-shadow: inset 0 10px 10px -5px rgb(255, 0, 0),
-  inset 0 -15px 20px -10px rgb(138, 19, 19);
+  box-shadow: inset 0 10px 10px -5px rgb(222, 114, 109),
+  inset 0 -15px 20px -10px rgb(72, 26, 62);
 }
 /* RECONNECT banner*/
 .notice_be03aa.colorDefault_be03aa{
   color: black;
+  font-weight: bold;
   background: rgb(40, 172, 46);
-  box-shadow: inset 0 10px 10px -5px rgb(49, 236, 49),
-  inset 0 -15px 20px -10px rgb(21, 80, 21);
+  box-shadow: inset 0 10px 10px -5px rgb(165, 243, 164),
+  inset 0 -15px 20px -10px rgb(32, 43, 66);
 }
-.button_be03aa{
-  color: black;
-  border-radius: 0;
-  border-color: black;
-}
-.notice_be03aa.colorStreamerMode_be03aa{
-  color: white;
+
+.notice_be03aa.colorStreamerMode_be03aa, .button_be03aa{
+  color: rgb(108, 200, 106);
+  font-weight: bold;
   background: rgb(133, 43, 212);
-  box-shadow: inset 0 10px 10px -5px rgb(175, 3, 255),
-  inset 0 -15px 20px -10px rgb(95, 11, 134);
+  box-shadow: inset 0 10px 10px -5px rgb(155, 150, 223),
+  inset 0 -15px 20px -10px rgb(79, 34, 51);
+}
+.bd-notice.bd-notice-info, .bd-notice-button{
+  color: black;
+  font-weight: bold;
+  background: rgb(43, 184, 212);
+  box-shadow: inset 0 10px 10px -5px rgb(150, 223, 190),
+  inset 0 -15px 20px -10px rgb(65, 34, 79);
 }
 /** end **/
 
