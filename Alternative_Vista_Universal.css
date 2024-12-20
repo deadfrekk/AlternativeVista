@@ -1,7 +1,7 @@
 /**
- * @name Alternative Vista Unset OS
+ * @name Alternative Vista Unset OS Development
  * @author Frekk
- * @version 1.20
+ * @version 1.21
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  * @source https://github.com/deadfrekk/discord-projects/tree/main/themes/vista
@@ -114,14 +114,14 @@ mask-size: contain !important;
 }
 /**end**/
 /* WARNING banner*/
-.button_be03aa, .bd-notice-button{
+.button_be03aa, .button_be03aa .bd-notice-button{
   color: black;
   border-radius: 2;
   border: 0;
   border-bottom: 1px solid;
   border-color: black;
 }
-.notice_be03aa.colorDanger_be03aa, .button_be03aa{
+.notice_be03aa.colorDanger_be03aa, .notice_be03aa.colorDanger_be03aa .button_be03aa{
   color: rgb(144, 142, 123);
   font-weight: bold;
   background: rgb(201, 3, 3);
@@ -129,7 +129,7 @@ mask-size: contain !important;
   inset 0 -15px 20px -10px rgb(72, 26, 62);
 }
 /* RECONNECT banner*/
-.notice_be03aa.colorDefault_be03aa{
+.notice_be03aa.colorDefault_be03aa, .notice_be03aa.colorDefault_be03aa .button_be03aa{
   color: black;
   font-weight: bold;
   background: rgb(40, 172, 46);
@@ -137,19 +137,28 @@ mask-size: contain !important;
   inset 0 -15px 20px -10px rgb(32, 43, 66);
 }
 
-.notice_be03aa.colorStreamerMode_be03aa, .button_be03aa{
+.notice_be03aa.colorStreamerMode_be03aa, .notice_be03aa.colorStreamerMode_be03aa .button_be03aa{
   color: rgb(108, 200, 106);
   font-weight: bold;
   background: rgb(133, 43, 212);
   box-shadow: inset 0 10px 10px -5px rgb(155, 150, 223),
   inset 0 -15px 20px -10px rgb(79, 34, 51);
 }
-.bd-notice.bd-notice-info, .bd-notice-button{
+.bd-notice.bd-notice-info, .bd-notice.bd-notice-info .bd-notice-button{
   color: black;
   font-weight: bold;
   background: rgb(43, 184, 212);
   box-shadow: inset 0 10px 10px -5px rgb(150, 223, 190),
   inset 0 -15px 20px -10px rgb(65, 34, 79);
+}
+
+/*server permission*/
+.notice_a50047.notice_be03aa{
+  color: rgb(144, 142, 123);
+  font-weight: bold !important;
+  background: rgb(201, 3, 3);
+  box-shadow: inset 0 10px 10px -5px rgb(222, 114, 109),
+  inset 0 -15px 20px -10px rgb(72, 26, 62);
 }
 /** end **/
 
@@ -463,7 +472,8 @@ box-shadow: inset 0 20px 20px -17px rgb(255, 255, 255),
 inset -7px 0 10px -10px black;
 }
 /*edit server name handle*/
-.container_fd6364.clickable_fd6364{
+.container_fd6364.clickable_fd6364, /*boosted server hotyfix*/
+.container_fd6364.clickable_fd6364.hasBanner_fd6364.bannerVisible_fd6364.theme-dark.images-dark .header_fd6364 {
 background: linear-gradient(var(--color47), var(--color47) 15%, rgb(61,61,61) 65%,var(--color47) 95%) !important;
 box-shadow: 
 inset 0 25px 30px -25px black,
@@ -473,6 +483,7 @@ inset 5px 0 5px -5px rgb(80, 80, 80),
 0 10px 10px -17px black,
 inset 0 -50px 10px -50px black;
 }
+
 .privateChannels_f0963d{
 /*background-Image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6081414.jpg&f=1&nofb=1&ipt=4ab42d88d55b20f4789501794fa7751de596e5730b037ace047337876758805e&ipo=images);*/
 /*https://www.gradientmagic.com/collection/darkbg/gradient/1602197911880*/
@@ -524,6 +535,10 @@ background: var(--color43);
 .container_cbd271{
 background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 /*change later - maybe orangefy the bitchple to make ocntrast?*/
+}
+.animatedContainer_fd6364{
+  z-index: 2;
+  width: 99%;
 }
 /*channel list bg*/
 .scrollerBase_eed6a8  {
@@ -1155,6 +1170,7 @@ inset 11px 0px 5px -10px white;
 background-image: linear-gradient(rgba(255, 255, 255, 0.148),var(--color47),45%,var(--color43)) !important;
 border-radius: 0px;
 }
+
 .contentRegionScroller_c25c6d::-webkit-scrollbar-thumb {
 border-radius: 0px;
 background-image: repeating-linear-gradient(0deg, hsla(265,0%,47%,0.4) 0px, hsla(265,0%,47%,0.4) 1px,transparent 1px, transparent 3px),repeating-linear-gradient(90deg, hsla(265,0%,47%,0.4) 0px, hsla(265,0%,47%,0.4) 1px,transparent 1px, transparent 3px),linear-gradient(90deg, rgb(97,97,97),rgb(97,97,97));
@@ -1750,7 +1766,13 @@ border-radius: 0px;
 background-image: repeating-linear-gradient(0deg, hsla(265,0%,47%,0.4) 0px, hsla(265,0%,47%,0.4) 1px,transparent 1px, transparent 3px),repeating-linear-gradient(90deg, hsla(265,0%,47%,0.4) 0px, hsla(265,0%,47%,0.4) 1px,transparent 1px, transparent 3px),linear-gradient(90deg, rgb(97,97,97),rgb(97,97,97));
 }
 
+/*on server join options*/
+.optionContainer_e3f8c2{
+  background-color: rgba(93, 96, 93, 0.1);
+}
+
 /*end sever guide and channel roles hotfix*/
+
 
 /*betterdiscordcsswindow*/
 .floating-window-titlebar{
