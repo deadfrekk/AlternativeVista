@@ -1,7 +1,7 @@
 /**
  * @name Alternative Vista Unset OS Development 2
  * @author Frekk
- * @version 1.24
+ * @version 1.25
  * @description Cutting edge 2015 theme. Inspired by skeuomorphism and the old Steam UI. I brought over some styling from SkeuoCord and DTM-08
  * @website 
  ******************************************************************************
@@ -963,24 +963,24 @@ transition: 0;
 }*/
 
 /*chat scroller*/
-.managedReactiveScroller_d125d2::-webkit-scrollbar {
+.managedReactiveScroller_d125d2::-webkit-scrollbar, .peopleList__5ec2f.auto__99f8c.scrollerBase__99f8c::-webkit-scrollbar {
 width: 17px;
 }
 /*.managedReactiveScroller_d125d2::-webkit-scrollbar-button{
 background-color: rgba(255, 255, 255, 0.094);
 width: 17px;
 }*/
-.managedReactiveScroller_d125d2::-webkit-scrollbar-track {
+.managedReactiveScroller_d125d2::-webkit-scrollbar-track, .peopleList__5ec2f.auto__99f8c.scrollerBase__99f8c::-webkit-scrollbar-track {
 background-image: linear-gradient(rgba(255, 255, 255, 0.148),var(--color47),45%,var(--color43)) !important;
 border-radius: 0px;
 height: 50px !important;
 }
 
-.managedReactiveScroller_d125d2::-webkit-scrollbar-thumb {
+.managedReactiveScroller_d125d2::-webkit-scrollbar-thumb, .peopleList__5ec2f.auto__99f8c.scrollerBase__99f8c::-webkit-scrollbar-thumb  {
 border-radius: 0px;
 background-image: repeating-linear-gradient(0deg, hsla(265,0%,47%,0.4) 0px, hsla(265,0%,47%,0.4) 1px,transparent 1px, transparent 3px),repeating-linear-gradient(90deg, hsla(265,0%,47%,0.4) 0px, hsla(265,0%,47%,0.4) 1px,transparent 1px, transparent 3px),linear-gradient(90deg, rgb(97,97,97),rgb(97,97,97));
 }
-.managedReactiveScroller_d125d2::-webkit-scrollbar-thumb:hover {
+.managedReactiveScroller_d125d2::-webkit-scrollbar-thumb:hover, .peopleList__5ec2f.auto__99f8c.scrollerBase__99f8c::-webkit-scrollbar-thumb:hover  {
 
 }
 /* messages uncozy*/
@@ -1391,12 +1391,9 @@ animation: 4s scanAnim infinite linear;
 box-shadow: inset 0 20px 60px -25px black;
 background: var(--color43);
 }
-.peopleColumn__133bf .scrollerBase__99f8c{
-
-}
-.sectionTitle__5ec2f{
-box-shadow:  0 8px 8px rgba(255, 255, 255, 0.336);
-}
+.content__99f8c{
+box-shadow:  inset 0 8px 8px -8px rgba(255, 255, 255, 0.336);
+}*
 .peopleColumn__133bf .scrollerBase__99f8c{
 box-shadow: inset 2px 90px 100px -55px rgb(23, 23, 23), inset 0 -15px 10px -15px black;
 }
@@ -1786,7 +1783,7 @@ background-image: repeating-linear-gradient(0deg, hsla(265,0%,47%,0.4) 0px, hsla
 background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, var(--color47) 0px, var(--color47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33)) !important;
 }
 /*convo starter*/
-.container__93db4, .iconContainer__93db4 .icon__93db4, .emptyChannelIcon__00de6.emptyChannelIconComponent__00de6{
+.container__93db4, .iconContainer__93db4 .icon__93db4, .emptyChannelIcon__00de6.emptyChannelIconComponent__00de6, .wrapper__44df5{
   background-color: rgba(0,0,0,0) !important;
   }
 /*code container*/
@@ -1799,4 +1796,11 @@ background-image: radial-gradient(circle at center center, transparent,rgb(33,33
 }
 #bd-editor-controls{
 background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, var(--color43),var(--color43)) !important;
+}
+.bd-addon-store-card{
+  background-color: rgba(43, 47, 43, 1);
+  border: 1px solid black;
+}
+.bd-addon-store-card:hover{
+  background-color: rgba(25, 29, 25, 1) !important;
 }
