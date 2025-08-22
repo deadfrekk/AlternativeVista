@@ -1,0 +1,116 @@
+/*aero window simulation*/
+.titleBar__421ed.withBackgroundOverride__421ed.withFrame__421ed{
+    position: relative;
+    border-radius: 5px;
+    top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 3px;
+    /*box-shadow: 10px -10px 5px -5px black, -10px -10px 5px -5px black;*/
+    background-image: linear-gradient(var(--color47),var(--color43)) !important;
+  z-index: 1;
+}
+
+.appAsidePanelWrapper_a3002d{
+  border-radius: 5px;
+  margin: 5px;
+  position: relative;
+  top: -25px;
+  padding-top: -25px;
+  padding-bottom: 0px !important;
+  margin-top: 25px;
+  margin-bottom: -20px;
+  box-shadow: 0 0 7px 3px black;
+  
+  background-image: linear-gradient(transparent,transparent) !important;
+}
+.notAppAsidePanel_a3002d{
+  
+  border: 7px solid var(--color43);
+  border: 70px solid green !important;
+}
+
+.typeWindows__421ed.withFrame__421ed.titleBar__421ed{
+  
+    position: relative;
+    border-radius: 5px;
+    top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 4px;
+    /*box-shadow: 10px -10px 5px -5px black, -10px -10px 5px -5px black;*/
+    background-image: linear-gradient(var(--color47),var(--color43)) !important;
+  z-index: 1;
+}
+.winButtonClose__421ed.winButton__421ed, .winButtonMinMax__421ed.winButton__421ed{
+  right: 5px;
+  border-top: 0;
+}
+.wordmarkWindows__421ed.wordmark__421ed{
+  top: 3px;
+}
+.typeWindows__421ed.withFrame__421ed.titleBar__421ed.withBackgroundOverride__421ed{
+    padding-top: 3px;
+}
+.typeWindows__421ed.withFrame__421ed.titleBar__421ed{
+    padding-top: 7px;
+}
+
+
+.appMount__51fd7{
+  
+  border-radius: 7px;
+  background: transparent !important;
+  
+  
+}
+body{
+  
+  border-radius: 9px;
+  background: transparent !important;
+  
+  
+}
+
+/* END aero window simulation*/
+
+/*start fucko winButtons*/
+.winButtonClose_c38106 , .winButtonMinMax_c38106{
+border-left: 1px solid rgb(92,92,92);
+border-top: 1px solid rgb(92,92,92);
+border-bottom: 1px solid rgb(92,92,92);
+height: 15px !important;
+}
+
+.winButtonClose_c38106  {
+background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACUSURBVHgBlZFNCoQwDIVbmRvOMHOAAd0K/uDGlYKiCG4VPICi9yu0oCSQoFUXFtKEl6+voZXvr7sKay1TL690FOexY+Hz87i2decOuDKQsNGVe8AGYTRJIh0Y+orBvxszCPllOymlxN06jNE26Qnwg4zdHQLrMhFaawwAqAadDPE1ijwUxhiMKCmxCZk06OMYTz5lAx3xWDeXkLNAAAAAAElFTkSuQmCC) no-repeat 50%;
+filter: saturate(1.5);
+border-right: 1px solid rgb(92,92,92);
+box-shadow: 0 0 2px #fff,
+      inset 2px -6px 8px -6px #fff,
+      inset 0px 20px 15px -23px #fff,
+      inset 0px 20px 15px -20px rgb(251, 112, 84);
+border-radius: 0px 0px 2px 0px;
+min-width: 48px;
+position: relative;
+background-color: rgb(139, 24, 24);
+margin-right: 10px
+/*titlebar close button*/
+}
+
+.winButtonClose_c38106:hover, .typeWindows__421ed.withFrame__421ed.titleBar__421ed.theme-dark .winButtonClose_c38106:hover {
+box-shadow: 0 0 2px #fff,
+      inset 2px -6px 8px -6px rgb(237, 187, 50),
+      inset 0px 20px 15px -23px #fff,
+      inset 0px 20px 15px -20px rgb(198, 87, 31);
+background-color: rgb(164, 18, 18);
+/*titlebar close button hover*/
+}
+.winButtonClose_c38106:active, .typeWindows__421ed.withFrame__421ed.titleBar__421ed.theme-dark .winButtonClose_c38106:active {
+box-shadow: 0 0 2px #fff,
+      inset 2px -6px 8px -6px rgb(0, 0, 0),
+      inset 0px 20px 15px -23px rgb(0, 0, 0),
+      inset 0px 20px 15px -20px rgb(198, 87, 31);
+background-color: rgb(164, 18, 18);
+/*titlebar close button active*/
+}
