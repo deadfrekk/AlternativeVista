@@ -1,4 +1,11 @@
-<h1>Alternative Vista Theme for Discord</h1>
+<h1>Rounded edges and old winbuttons Theme for Discord</h1>
+<img width="1024" alt="Vista" src="https://github.com/deadfrekk/AlternativeVista/blob/clean-window-mod/windowmod.png?raw=true"/>
+
+i do not know if this works with other themes, let me know
+
+<h1>OLD!!!!!!!</h1>
+
+<h2>Alternative Vista Theme for Discord</h2>
 Let me know if there is anything about the theme you want updated.
 
 To use theme on MacOs, delete the [@import .. aero_window_simulation ] line for theme.css file.
