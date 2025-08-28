@@ -1,3 +1,10 @@
+/**
+ * @name Window Mod
+ * @author Frekk
+ * @description Adds drop shadow, old fashioned winbuttons, and rounded edges to the window
+ * @version 1.0
+ */
+
 /*aero window simulation*/
 .bar_c38106, .bar_c38106.systemBar_c38106.fixed_c38106, .titleBar__421ed.withBackgroundOverride__421ed.withFrame__421ed{
     /*position: relative;
