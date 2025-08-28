@@ -1,0 +1,113 @@
+/*aero window simulation*/
+.bar_c38106, .bar_c38106.systemBar_c38106.fixed_c38106, .titleBar__421ed.withBackgroundOverride__421ed.withFrame__421ed{
+    /*position: relative;
+    border-radius: 5px;
+    top: 0px;
+    /*margin-right: 5px;
+    margin-left: 5px;
+    padding: 3px;
+    box-shadow: 10px -10px 5px -5px black, -10px -10px 5px -5px black;*/
+    /*box-shadow:  1px -5px 3px -1px rgba(0,0,0,0.2);*/
+}
+.appMount__51fd7{
+  /*margin-top: 5px;*/
+  background: rgba(0,0,0,0) !important;
+}
+.app__160d8, .app_a3002d{
+  border-radius: 5px;
+  background: var(--background-base-lowest);;
+  margin-bottom: 5px;
+}
+.layerContainer_da8173{
+  border-radius: 50px;
+  margin: 5px;
+}
+.bg__960e4{
+  background: rgba(0,0,0,0) !important;
+}
+
+.appAsidePanelWrapper_a3002d{
+  border-radius: 7px;
+  position: relative;
+  margin: 5px;
+  /*top: -25px;
+  padding-top: 0px;
+  padding-bottom: 25px !important;
+  margin-top: 25px;*/
+  box-shadow: 0 0 5px 1px black;
+}
+
+.winButtonClose__421ed.winButton__421ed, .winButtonMinMax__421ed.winButton__421ed{
+  right: 5px;
+  border-top: 0;
+}
+.wordmarkWindows__421ed.wordmark__421ed{
+  top: 3px;
+}
+.typeWindows__421ed.withFrame__421ed.titleBar__421ed.withBackgroundOverride__421ed{
+    padding-top: 3px;
+}
+.typeWindows__421ed.withFrame__421ed.titleBar__421ed{
+    padding-top: 7px;
+}
+
+
+/*#app-mount{
+  
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 1) !important;
+  
+  
+}
+body{
+  
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 1) !important;
+}*/
+body, .trailing_c38106{
+  background-image: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* END aero window simulation*/
+
+/*start fucko winButtons*/
+.winButtonClose_c38106 , .winButtonMinMax_c38106{
+border-left: 1px solid rgb(92,92,92);
+border-top: 1px solid rgb(92,92,92);
+border-bottom: 1px solid rgb(92,92,92);
+height: 15px !important;
+}
+
+.winButtonClose_c38106  {
+background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACUSURBVHgBlZFNCoQwDIVbmRvOMHOAAd0K/uDGlYKiCG4VPICi9yu0oCSQoFUXFtKEl6+voZXvr7sKay1TL690FOexY+Hz87i2decOuDKQsNGVe8AGYTRJIh0Y+orBvxszCPllOymlxN06jNE26Qnwg4zdHQLrMhFaawwAqAadDPE1ijwUxhiMKCmxCZk06OMYTz5lAx3xWDeXkLNAAAAAAElFTkSuQmCC) no-repeat 50%;
+filter: saturate(1.5);
+border-right: 1px solid rgb(92,92,92);
+box-shadow: 0 0 2px #fff,
+      inset 2px -6px 8px -6px #fff,
+      inset 0px 20px 15px -23px #fff,
+      inset 0px 20px 15px -20px rgb(251, 112, 84);
+border-radius: 0px 0px 2px 0px;
+min-width: 48px;
+position: relative;
+background-color: rgb(139, 24, 24);
+margin-right: 10px
+/*titlebar close button*/
+}
+
+.winButtonClose_c38106:hover, .typeWindows__421ed.withFrame__421ed.titleBar__421ed.theme-dark .winButtonClose_c38106:hover {
+box-shadow: 0 0 2px #fff,
+      inset 2px -6px 8px -6px rgb(237, 187, 50),
+      inset 0px 20px 15px -23px #fff,
+      inset 0px 20px 15px -20px rgb(198, 87, 31);
+background-color: rgb(164, 18, 18);
+/*titlebar close button hover*/
+}
+.winButtonClose_c38106:active, .typeWindows__421ed.withFrame__421ed.titleBar__421ed.theme-dark .winButtonClose_c38106:active {
+box-shadow: 0 0 2px #fff,
+      inset 2px -6px 8px -6px rgb(0, 0, 0),
+      inset 0px 20px 15px -23px rgb(0, 0, 0),
+      inset 0px 20px 15px -20px rgb(198, 87, 31);
+background-color: rgb(164, 18, 18);
+/*titlebar close button active*/
+}
