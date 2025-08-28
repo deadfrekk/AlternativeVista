@@ -1,4 +1,4 @@
-<h1>Rounded edges and old winbuttons Theme for Discord</h1>
+<h1>Rounded edges, drop shadows and old winbuttons Theme for Discord</h1>
 <img width="1024" alt="Vista" src="https://github.com/deadfrekk/AlternativeVista/blob/clean-window-mod/windowmod.png?raw=true"/>
 
 i do not know if this works with other themes, let me know
